@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +9,15 @@
 </head>
 <body>
     <center>
-    <h1>login</h1>
+    <div class="login-box">
+        <h1>LOGIN</h1>
+        <form action="proses_login.php" method="POST">
+            <input type="text" name="username" required>
+            <input type="password" name="password" required>
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+    <!-- <h1>login</h1>
     <form action="index.php" method="POST">
         <div>
         <label for="">username</label> <br/>
@@ -17,6 +26,13 @@
          <div>
         <label for="">password</label> <br/>
         <input type="text" name="password"/>
+        </div>
+        <div>
+        <label for="">role</label> <br/>
+        <select name="role">
+            <option VALUES="siswa" >siswa</option>
+            <option VALUES="admin" >admin</option>
+        </select>
         </div>
          <div>
         <label for="">NIS</label> <br/>
@@ -27,16 +43,11 @@
         <input type="text" name="kelas" />
         </div>
         <div>
-        <!-- <label for="">role</label> <br/>
-        <select name="role">
-            <option VALUES="siswa" >siswa</option>
-            <option VALUES="admin" >admin</option>
-        </select> -->
-        </div>
-        <div>
-        <button>submit</button>
+        <button><a href="" ></a>submit</button>
         </div>
     </form>
-    </center>
+    
+
+    </center> -->
 </body>
 </html>

@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data siswa</title>
+    <style>
+        
+    </style>
 </head>
 <body>
     <form action="" method="POST">
@@ -23,11 +26,6 @@
     <div>
     <label for="">nis</label> <br/>
     <input type="text" name="nis" />
-    </div>
-
-    <div>
-    <label for="">Nama</label> <br/>
-    <input type="text" name="nama"/>
     </div>
 
     <div>
@@ -59,8 +57,9 @@
     // echo "<h2>Pengaduan berhasil dikirim</h2>";
 
    $koneksi = mysqli_connect("localhost","root","","ujikom_bilqis");
-    mysqli_query($koneksi,"INSERT INTO `user` (`id`,`nama`,`username`,`password`,`role`,`nis`, `kelas`)
-    VALUES (NULL,'$nama','$username','$password','$role','$nis','$kelas')");}
+    mysqli_query($koneksi,"INSERT INTO `user` (`id`,`username`,`password`,`role`,`nis`, `kelas`)
+    VALUES (NULL,'$username','$password','$role','$nis','$kelas')");
+    }
     ?>
 </body>
 </html>
