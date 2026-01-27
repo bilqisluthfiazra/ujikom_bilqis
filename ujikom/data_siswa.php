@@ -33,20 +33,14 @@
     <input type="text" name="kelas"/>
     </div>
 
-    <div>
-    <label>role</label><br>
-    <select name="role">
-    <option value="">-- Pilih role --</option>
-    <option value="1">siswa</option>
-    <option value="2">admin</option>
-    </select>
-    </div>
+    
 
         <button> kirim</button>
     </center>
     <?php
     if (isset($_POST['username'])) {
 
+    $nama =$_POST['nama'];
     $username =$_POST['username'];
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
     $role=$_POST['role'];

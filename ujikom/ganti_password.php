@@ -76,7 +76,7 @@ body {
 <body>
 
 <div class="login-box">
-  <h2>ganti password</h2>
+  <h2>Ganti Password</h2>
 
   <form action="login.php" method="post">
 

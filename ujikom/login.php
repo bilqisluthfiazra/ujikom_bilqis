@@ -85,7 +85,7 @@ body {
 
     <label>Password</label>
     <input type="password" name="password" style="margin-bottom:5px;" placeholder="Masukkan password" required>
-    <a href="\ujikom\ganti_password.php" style="text-decoration:none;">ganti password disini</a>
+    <a href="\ujikom\ganti_password.php" style="text-decoration:none; font-size:13px;">ganti password disini</a>
 
     <button type="submit" style=" margin-top:15px;">Login</button>
 

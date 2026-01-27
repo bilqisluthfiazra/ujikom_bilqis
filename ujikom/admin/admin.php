@@ -110,10 +110,9 @@ body {
 <div class="container">
 
     <h1>SELAMAT DATANG</h1>
-    <h2>di Forum Pengaduan sarana sekolah</h2>
+    <h2>di Forum Pengaduan Sarana Sekolah</h2>
     <h2>SMK TI MUHAMMADIYAH</h2>
     <h2>CIKAMPEK</h2>
-
     <!-- Gambar -->
     <img src="https://i.pinimg.com/736x/7a/e8/64/7ae864168ef9e95b7707621670dfa37e.jpg" alt="Logo">
 </div>
@@ -124,9 +123,10 @@ body {
     <div id="close-btn">&times;</div>
     <ul>
         <li><img src="https://i.pinimg.com/736x/97/62/6d/97626daee352cb3ecd57b7357495ffb6.jpg" class="a"></img></li>
-        <li><a href="\ujikom\siswa.php">Dashboard</a></li>
-        <li><a href="\ujikom\form_pengaduan.php">Form pengaduan</a></li>
-        <li><a href="\ujikom\detail_pengaduan.php">Riwayat</a></li>
+        <li><a href="\ujikom\admin\data_pengaduan.php">Data pengaduan</a></li>
+        <li><a href="\ujikom\admin\detail_pengaduan.php">Riwayat pengaduan</a></li>
+        <li><a href="\ujikom\form_pengaduan.php">Data siswa</a></li>
+        <li><a href="\ujikom\detail_pengaduan.php">Kategori</a></li>
         <li><a href="\ujikom\login.php" style="color:red;">Logout</a></li>
     </ul>
 </nav>
