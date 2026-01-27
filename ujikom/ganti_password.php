@@ -76,18 +76,21 @@ body {
 <body>
 
 <div class="login-box">
-  <h2>Login</h2>
+  <h2>ganti password</h2>
 
-  <form action="proses_login.php" method="post">
+  <form action="login.php" method="post">
 
     <label>Username</label>
-    <input type="text" name="username" placeholder="Masukkan username" required>
+    <input type="text" name="username" placeholder="Masukkan username" >
 
     <label>Password</label>
-    <input type="password" name="password" style="margin-bottom:5px;" placeholder="Masukkan password" required>
-    <a href="\ujikom\ganti_password.php" style="text-decoration:none;">ganti password disini</a>
+    <input type="password" name="password" placeholder="Masukkan password" >
 
-    <button type="submit" style=" margin-top:15px;">Login</button>
+    <label>konfirmasi password</label>
+    <input type="password" name="password" placeholder="Masukkan password">
+
+    <button type="submit" >submit</button>
+    <button type="submit" style="margin-top: 10px;"><a href="\ujikom\login.php"></a>kembali</button>
 
   </form>
 </div>

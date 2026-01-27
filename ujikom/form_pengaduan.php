@@ -117,12 +117,12 @@
     <form action="proses-pengaduan.php" method="POST"> 
         <div>
             <label>NIS</label>
-            <input type="text" name="nis">
+            <input type="text" name="nis" required>
         </div>
 
         <div>
             <label>Kategori</label>
-            <select name="kategori">
+            <select name="kategori" required>
                 <option value="">-- Pilih Kategori --</option>
                 <option value="1">Lingkungan</option>
                 <option value="2">Fasilitas</option>
@@ -131,12 +131,12 @@
 
         <div>
             <label>Lokasi</label>
-            <input type="text" name="lokasi">
+            <input type="text" name="lokasi" required>
         </div>
 
         <div>
             <label>Keterangan</label>
-            <textarea name="keterangan"></textarea>
+            <textarea name="keterangan" required></textarea>
         </div>
         <button type="submit"><a href="\ujikom\detail_pengaduan.php">Kirim</a></button>
         <button type="submit" style="margin-top: 10px;"><a href="\ujikom\index.php">Kembali</a></button>

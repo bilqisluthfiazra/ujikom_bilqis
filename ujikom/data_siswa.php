@@ -47,7 +47,6 @@
     <?php
     if (isset($_POST['username'])) {
 
-    $nama =$_POST['nama'];
     $username =$_POST['username'];
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
     $role=$_POST['role'];

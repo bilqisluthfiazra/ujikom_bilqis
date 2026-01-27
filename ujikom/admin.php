@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>siswa</h1>
+    <h1>admin</h1>
 </body>
 </html>

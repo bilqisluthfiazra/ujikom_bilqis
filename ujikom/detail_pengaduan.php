@@ -1,11 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detail pengaduan</title>
-</head>
-<body>
-    
-</body>
-</html>
+
+<div class="container">
+<h2>Detail Pengaduan</h2>
+
+<form method="post">
+Status:
+<select name="status">
+  <option>Diproses</option>
+  <option>Selesai</option>
+</select><br><br>
+
+Tanggapan:<br>
+<textarea name="tanggapan"><?= $data['tanggapan'] ?></textarea><br><br>
+
+<button name="simpan">Simpan</button>
+</form>
+</div>
