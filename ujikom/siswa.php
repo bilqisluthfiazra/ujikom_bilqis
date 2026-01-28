@@ -7,7 +7,7 @@
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family:Monoid;
     min-height:100vh;
     background: linear-gradient(to right, #3e6985, #8aa7bc, #a6bed1);
     background-size:cover;
@@ -111,11 +111,10 @@ body {
 
     <h1>SELAMAT DATANG</h1>
     <h2>di Forum Pengaduan sarana sekolah</h2>
-    <h2>SMK TI MUHAMMADIYAH</h2>
-    <h2>CIKAMPEK</h2>
-
     <!-- Gambar -->
     <img src="https://i.pinimg.com/736x/7a/e8/64/7ae864168ef9e95b7707621670dfa37e.jpg" alt="Logo">
+    <h2>SMK TI MUHAMMADIYAH</h2>
+    <h2>CIKAMPEK</h2>
 </div>
 
 <!-- sidebar -->
@@ -148,6 +147,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 </script>
+
+<?php
+session_start();
+if (!isset($_SESSION['username'])){
+    header("location : login.php");
+    exit;
+}
+?>
 
 </body>
 </html>

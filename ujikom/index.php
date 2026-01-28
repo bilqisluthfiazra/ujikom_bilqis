@@ -10,7 +10,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: Arial, sans-serif;
+    font-family:Monoid;
 }
 
 body{
@@ -31,7 +31,7 @@ body{
 /* Card utama */
 .container{
     background:#ffffff;
-    width:400px;
+    width:500px;
     padding:30px 25px;
     border-radius:15px;
     text-align:center;
@@ -51,7 +51,7 @@ body{
 
 /* Gambar */
 .container img{
-    width:120px;
+    width:100px;
     margin:15px 0;
 }
 
@@ -84,12 +84,11 @@ body{
 <div class="container">
 
     <h1>SELAMAT DATANG</h1>
-    <h2>di Forum Pengaduan sarana sekolah</h2>
-    <h2>SMK TI MUHAMMADIYAH</h2>
-    <h2>CIKAMPEK</h2>
-
+    <h2>di Forum Pengaduan Sarana Sekolah</h2>
     <!-- Gambar -->
     <img src="https://i.pinimg.com/736x/7a/e8/64/7ae864168ef9e95b7707621670dfa37e.jpg" alt="Logo">
+    <h2>SMK TI MUHAMMADIYAH</h2>
+    <h2>CIKAMPEK</h2>
 
     <!-- Tombol -->
     <div class="btn">

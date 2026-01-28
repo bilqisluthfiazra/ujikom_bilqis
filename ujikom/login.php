@@ -81,10 +81,10 @@ body {
   <form action="proses_login.php" method="post">
 
     <label>Username</label>
-    <input type="text" name="username" placeholder="Masukkan username" required>
+    <input type="text" name="username" placeholder="Masukkan username" >
 
     <label>Password</label>
-    <input type="password" name="password" style="margin-bottom:5px;" placeholder="Masukkan password" required>
+    <input type="password" name="password" style="margin-bottom:5px;" placeholder="Masukkan password" >
     <a href="\ujikom\ganti_password.php" style="text-decoration:none; font-size:13px;">ganti password disini</a>
 
     <button type="submit" style=" margin-top:15px;">Login</button>

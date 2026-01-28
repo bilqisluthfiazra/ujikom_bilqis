@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dashboard</title>
-<style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data siswa</title>
+    <style>
 body {
     margin: 0;
-    font-family: monoid;
+    font-family:Monoid;
     min-height:100vh;
     background: linear-gradient(to right, #3e6985, #8aa7bc, #a6bed1);
     background-size:cover;
@@ -18,7 +18,42 @@ body {
     justify-content:center;
     align-items:center;
 }
-/* tombol menu */
+
+/* ===== BUTTON ===== */
+        button  {
+            width: 200px;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            background-color: #3E6985; /* Teal Blue */
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        button a{
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            background-color: #3E6985; /* Teal Blue */
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        button a:hover {
+            background-color: #0D273D; 
+            color : #a6bed1;
+        }
+        button:hover {
+            background-color: #0D273D; /* Yankees Blue */
+            color : #a6bed1;
+        }
+
+
+        /* tombol menu */
 #menu-btn {
     font-size: 40px;
     cursor: pointer;
@@ -103,22 +138,13 @@ body {
     width:120px;
     margin:15px 0;
 }
-</style>
+    </style>
 </head>
-
 <body>
-<div class="container">
-
-    <h1>SELAMAT DATANG</h1>
-    <h1>" Admin "</h1>
-    <h2>di Forum Pengaduan Sarana Sekolah</h2>
-    <!-- Gambar -->
-    <img src="https://i.pinimg.com/736x/7a/e8/64/7ae864168ef9e95b7707621670dfa37e.jpg" alt="Logo">
-    <h2>SMK TI MUHAMMADIYAH</h2>
-    <h2>CIKAMPEK</h2>
-</div>
-
-<!-- sidebar -->
+    <div></div>
+    <h1>Data Siswa</h1>
+    <button><a href="\ujikom\admin\tambah_data.php">Tambah Data</a></button>
+    <!-- sidebar -->
 <div id="menu-btn">&#9776;</div>
 <nav id="sidebar">
     <div id="close-btn">&times;</div>
@@ -149,12 +175,5 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 </script>
-<?php
-session_start();
-if (!isset($_SESSION['username']) || $_SESSION['role'] != 'admin') {
-    header("Location: login.php");
-    exit;
-}
-?>
 </body>
 </html>

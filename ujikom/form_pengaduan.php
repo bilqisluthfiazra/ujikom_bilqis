@@ -218,6 +218,11 @@
         </div>
 
         <div>
+            <label>Tanggal</label>
+            <input type="text" name="tanggal">
+        </div>
+
+        <div>
             <label>Keterangan</label>
             <textarea name="keterangan"></textarea>
         </div>
