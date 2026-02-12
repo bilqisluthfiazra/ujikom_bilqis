@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -125,7 +126,7 @@ body {
         <li><img src="https://i.pinimg.com/736x/97/62/6d/97626daee352cb3ecd57b7357495ffb6.jpg" class="a"></img></li>
         <li><a href="\ujikom\siswa.php">Dashboard</a></li>
         <li><a href="\ujikom\form_pengaduan.php">Form pengaduan</a></li>
-        <li><a href="\ujikom\detail_pengaduan.php">Riwayat</a></li>
+        <li><a href="\ujikom\data_aspirasi.php">Riwayat</a></li>
         <li><a href="\ujikom\login.php" style="color:red;">Logout</a></li>
     </ul>
 </nav>
@@ -148,13 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
-<?php
-session_start();
-if (!isset($_SESSION['username'])){
-    header("location : login.php");
-    exit;
-}
-?>
+
 
 </body>
 </html>

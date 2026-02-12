@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dashboard</title>
+<title>Dashboard Admin</title>
+
 <style>
 body {
     margin: 0;
@@ -107,28 +109,30 @@ body {
 </head>
 
 <body>
-<div class="container">
 
+<div class="container">
     <h1>SELAMAT DATANG</h1>
     <h1>" Admin "</h1>
     <h2>di Forum Pengaduan Sarana Sekolah</h2>
-    <!-- Gambar -->
+
     <img src="https://i.pinimg.com/736x/7a/e8/64/7ae864168ef9e95b7707621670dfa37e.jpg" alt="Logo">
     <h2>SMK TI MUHAMMADIYAH</h2>
     <h2>CIKAMPEK</h2>
 </div>
 
-<!-- sidebar -->
+<!-- tombol menu -->
 <div id="menu-btn">&#9776;</div>
+
+<!-- sidebar -->
 <nav id="sidebar">
     <div id="close-btn">&times;</div>
     <ul>
-        <li><img src="https://i.pinimg.com/736x/97/62/6d/97626daee352cb3ecd57b7357495ffb6.jpg" class="a"></img></li>
-        <li><a href="\ujikom\admin\data_pengaduan.php">Data pengaduan</a></li>
-        <li><a href="\ujikom\admin\detail_pengaduan.php">Riwayat pengaduan</a></li>
-        <li><a href="\ujikom\admin\data_siswa.php">Data siswa</a></li>
-        <li><a href="\ujikom\admin\kategori.php">Kategori</a></li>
-        <li><a href="\ujikom\login.php" style="color:red;">Logout</a></li>
+        <li><img src="https://i.pinimg.com/736x/97/62/6d/97626daee352cb3ecd57b7357495ffb6.jpg" class="a"></li>
+        <li><a href="../admin/admin.php">Dashboard</a></li>
+        <li><a href="../admin/data_pengaduan.php">Data pengaduan</a></li>
+        <li><a href="../admin/data_siswa.php">Data siswa</a></li>
+        <li><a href="../admin/kategori.php">Kategori</a></li>
+        <li><a href="\ujikom\logout.php" style="color:red;" onclick="return confirm('Yakin ingin logout?');">Logout</a></li>
     </ul>
 </nav>
 
@@ -149,12 +153,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 </script>
-<?php
-session_start();
-if (!isset($_SESSION['username']) || $_SESSION['role'] != 'admin') {
-    header("Location: login.php");
-    exit;
-}
-?>
+
 </body>
 </html>

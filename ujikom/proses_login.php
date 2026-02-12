@@ -1,9 +1,11 @@
+
 <?php
 session_start();
 include 'koneksi.php';
 
 $username = $_POST['username'];
 $password = $_POST['password'];
+
 
 $query = mysqli_query($koneksi, "SELECT * FROM user WHERE username='$username'");
 $data = mysqli_fetch_assoc($query);
@@ -13,12 +15,22 @@ if ($data) {
 
         $_SESSION['username'] = $data['username'];
         $_SESSION['role'] = $data['role'];
+        $_SESSION['nis'] = $data['nis'];
 
-        if ($data['role'] == "admin") {
-            header("Location: admin/admin.php");
-        } else if ($data['role'] == "siswa") {
-            header("Location: siswa.php");
-        }
+
+        $role = trim(strtolower($data['role']));
+
+if ($role === "admin") {
+    header("Location: admin/admin.php");
+    exit;
+} elseif ($role === "siswa") {
+    header("Location: siswa.php");
+    exit;
+} else {
+    echo "Role tidak valid di database!";
+    exit;
+}
+
 
     } else {
         echo "<script>
