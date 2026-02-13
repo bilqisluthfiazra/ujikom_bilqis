@@ -1,5 +1,9 @@
 
-
+<?php
+session_start();
+include 'koneksi.php';
+$nis = $_SESSION['nis'] ?? '';
+?>
 
 
 <!DOCTYPE html>
@@ -217,10 +221,10 @@
             <input type="text" name="lokasi">
         </div>
 
-        <div>
+        <!-- <div>
             <label>Tanggal</label>
             <input type="date" name="tanggal">
-        </div>
+        </div> -->
 
         <div>
             <label>Keterangan</label>
